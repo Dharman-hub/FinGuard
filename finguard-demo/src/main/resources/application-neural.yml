@@ -1,0 +1,10 @@
+finguard:
+  neural:
+    enabled: true
+    versioning-enabled: true
+    initial-version: v3.0
+    mode: CUSTOM
+    review-threshold-logit: 1.5145587
+    require-approved-releases: true
+    model-path: ../finguard-ml-training/models/synsepa-v3/finguard-model.onnx
+    normalization-path: ../finguard-ml-training/models/synsepa-v3/normalization.csv

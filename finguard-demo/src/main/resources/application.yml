@@ -1,0 +1,25 @@
+server:
+  address: 127.0.0.1
+  port: 8081
+
+spring:
+  application:
+    name: finguard-demo
+
+finguard:
+  enabled: true
+  review-threshold: 40
+  reject-threshold: 80
+  rules:
+    unusual-amount:
+      enabled: true
+      weight: 25
+    high-velocity:
+      enabled: true
+      weight: 35
+    new-recipient:
+      enabled: true
+      weight: 20
+    unusual-activity:
+      enabled: true
+      weight: 20
